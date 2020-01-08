@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Table from './Table'
 import Title from './Title'
+import Form from './Form'
+import Api from './Api'
 
 class App extends Component {
   removeCharacter = index => {
@@ -47,6 +49,8 @@ class App extends Component {
       <div className="container">
         <Title />
         <Table characterData={characters} removeCharacter={this.removeCharacter}/>
+        <Form />
+        <Api />
       </div>
     )
   }
